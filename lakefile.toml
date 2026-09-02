@@ -1,0 +1,23 @@
+name = "Assignment1"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Assignment1"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "autograder"
+git = "https://github.com/cmu-21-321/lean4-autograder-dev.git"
+rev = "v4.34.0-rc.2"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.34.0-rc2"
+
+[[lean_lib]]
+name = "Assignment1"
