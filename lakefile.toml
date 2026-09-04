@@ -9,10 +9,10 @@ relaxedAutoImplicit = false
 weak.linter.mathlibStandardSet = true
 maxSynthPendingDepth = 3
 
-[[require]]
-name = "autograder"
-git = "https://github.com/cmu-21-321/lean4-autograder-dev.git"
-rev = "v4.34.0-rc.2"
+#[[require]]
+#name = "autograder"
+#git = "https://github.com/cmu-21-321/lean4-autograder-dev.git"
+#rev = "v4.34.0-rc.2"
 
 [[require]]
 name = "mathlib"
