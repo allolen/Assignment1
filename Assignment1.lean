@@ -346,7 +346,7 @@ def exercise45 (A : Type) : A ⊕ Empty → A := by
   intro x
   rcases x with a | b
   · exact a
-  · cases b
+  · exact Empty.elim b
 
 -- Zero-branch elimination. Exercises 46 and 47 state the same function. Use
 -- `Empty.elim` in the term proof.
@@ -358,6 +358,6 @@ def exercise46 (A B : Type) (f : A → Empty) : A → B :=
 @[autogradedDef 1]
 def exercise47 (A B : Type) (f : A → Empty) : A → B := by
   intro a
-  cases (f a)
+  exact Empty.elim (f a)
 
 end Homework1
