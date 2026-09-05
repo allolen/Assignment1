@@ -50,7 +50,8 @@ def exercise03 (A B C : Type) : A → B → C → B := by
 
 @[autogradedProof 1]
 theorem exercise04 (P Q : Prop) : P → (P → Q) → Q := by
-  exact λx ↦ λf ↦ f x
+  intro p g
+  exact g p
 
 @[autogradedProof 1]
 theorem exercise05 (P Q R : Prop) (h : P → Q → R) (hP : P) :
